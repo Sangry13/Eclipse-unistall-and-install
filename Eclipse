@@ -1,0 +1,13 @@
+
+Hey,
+I had huge problems trying to reinstall eclipse because when I updated from last ubuntu version to the new one all the privileges changed and I had to do every thing as a root. Also I had big troubles with the plug-ins because they were there but eclipse didn't showed them. so here is what I did to start a clean reinstall.
+1. First log in as a root $su - root
+2. $apt-get autoremove eclipse
+3. $rm -r /usr/lib/eclipse (will remove all the plugins that were lost or were giving you problems and also configuration files which if you are new with eclipse for sure there is nothing to keep)
+4. $apt-get install eclipse
+5. $eclipse (launch eclipse)
+6. add all the plugins you want from a clean instalation
+
+I'm sure there must be a cleaner way but this one after 10 thousand attempts was the only one that gave me a sweet result.
+
+After doing all of this, exit root and launch eclipse as a regular user.
